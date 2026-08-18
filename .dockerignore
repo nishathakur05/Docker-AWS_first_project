@@ -1,0 +1,5 @@
+backendd/node_modules
+Frontend/node_modules
+.git
+.env
+npm-debug.log

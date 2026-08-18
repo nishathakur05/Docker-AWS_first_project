@@ -1,3 +1,11 @@
-FROM nginx:latest
+FROM node:20-alpine
 
-COPY Frontend/dist /usr/share/nginx/html
+WORKDIR /app
+
+COPY ./backendd .
+
+RUN npm install
+
+EXPOSE 3000  
+
+CMD ["node", "server.js"]
